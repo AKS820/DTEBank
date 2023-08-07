@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8" />
+    <title>Credit Cards, Banking, Savings</title>
+
+    <link rel="icon" href="DTELogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="webfontkit-20230622-104309/stylesheet.css">
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "5c8cfb56-4a4f-48a8-bffe-7d190e82f9a1", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "f7c29fb5-9020-44bc-ba88-0b3167ee5685", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </head>
+<body>
+  <div style="background-color: black;">
+  <div class="Categories">
+    <a class="active" href="#home">Personal</a>
+    <a href="#news">Business</a>
+    <a href="#contact">Commercial</a>
+    <div class = "rightLinks" style="text-align: right;">
+      <a href="#home">Schedule a Meeting</a>
+      <a href="#news">Customer Service</a>
+      <a href="#contact">Spanish</a>
+    </div>
+  </div>
+  <h1 style="font-family: rockwell_extra_boldregular; font-size: 25px;" class = "name">D. T. E. BANK <img src="DTELogo.jpg" id = "movelogo" width="40px" height="40px" style="border: 2px solid #FFFFFF;"> </h1>
+  <div class="topnav">
+    <a class="active" href="#home">Checkings</a>
+    <a href="#news">Savings</a>
+    <a href="#contact">Credit Cards</a>
+    <a href="#about">Checks</a>
+    <a href="#about">Loans</a>
+    <a href="#about">Auto</a>
+  </div>
+</div>
+<div style="background-color: gold;">
+  <div class = "container">
+    <div><img src="laptopguy.jpg" id = "movelogotoo" width="306px" height="204px"></div>
+    <div class = "border">
+    <div class = "text"  style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"> <h2>NEW FEATURE</h2>
+      <div id="type_text"></div>
+      <p>Try it out NOW!</p>
+    </div>
+      <script>
+        var myText =  "New Watson Chatbot!";
+        var myArray = myText.split("");
+        var loopTimer;
+        function frameLooper() {
+            if(myArray.length > 0) {
+                document.getElementById("type_text").innerHTML += myArray.shift();
+            } else {
+                clearTimeout(loopTimer);
+            return false;
+            }
+            loopTimer = setTimeout("frameLooper()",70);
+        }
+        frameLooper();
+      </script>
+    </div>
+    <div class = "text2" style=" font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"> <h1>Welcome</h1></div>
+    <div class="box">
+      <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: #FFFFFF;position: relative;left: 55px;font-size: 25px;"> Existing Account?</p>
+      <div class= "signin">
+        <a href="#" class="fill-div">Sign in</a>
+      </div>
+      <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: #FFFFFF;position: relative;left: 40px;"> No account? <a href="#news" >Create one here -></a></p>
+    </div>
+  </div>
+</div>
+<div class = "greyBack" style="background-color: #D3D3D3;">
+  <div class = "containertwo" style="width: 100px; height: 100px;">
+      <img src = "checking.png" style="padding: 30px; top:20px; position: relative; ">
+      <img src = "savings.png" style="width: 50px; height: 50px;padding: 30px; top:20px; position: relative;">
+      <img src = "credit.png" style="padding: 30px; top:20px; position: relative;">
+      <img src = "investing.png" style="width: 50px; height: 50px; padding: 30px; top:20px; position: relative;">
+      <img src = "house.png" style="width: 80px; height: 50px; padding: 30px; top:20px; position: relative;">
+  </div>
+  <p> <div style = "display: inline; margin-right: 70px; margin-left: 500px">Checking</div> <div style = "display: inline; margin-right: 78px; margin-left: 0px">Savings</div> <div style = "display: inline;margin-right: 80px; margin-left: 0px">Credit</div> <div style = "display: inline;margin-right: 50px; margin-left: 0px">Investing</div> <div style = "display: inline">Mortgage</div></p>
+  <h2>Check Out The New DTE Freedom Unlimited Card!</h2>
+  <span class="fade-effect2"></span><br/><br/>
+  <div class = "containerThree">
+    <img src = "realCard.png" style="width:30%; height: 30%">
+    <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> We offer 80,000 bonus points, 26% APR, and only a $12 introduction fee, along with multiple other benefits! <br> Newly released and available to you, purchases allowed online or in-person. Click here to get directed to the appropriate site.</p>
+  </div>
+</div>
+</body>
+
+</html>
